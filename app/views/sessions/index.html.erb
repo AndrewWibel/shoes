@@ -1,0 +1,22 @@
+<h1>Register</h1>
+<% if flash[:messages] %>
+	<% flash[:messages].each do |message| %>
+	<p><%= message %></p>
+	<%end%>
+<%end%>
+<form action='/users/create' method='post'>
+	<input type='hidden' value='<%=form_authenticity_token%>' name='authenticity_token'>
+	First Name: <input type='text' name='user[first_name]'>
+	Last Name: <input type='text' name='user[last_name]'>
+	Email: <input type='email' name='user[email]'>
+	Password: <input type='password' name='user[password]'>
+	<input type='submit' value='Register'>
+</form>
+
+<h1>Login</h1>
+<form action='/sessions/create' method='post'>
+	<input type='hidden' value='<%=form_authenticity_token%>' name='authenticity_token'>
+	email:<input type='email' name='email'>
+	password:<input type='password' name='password'>
+	<input type='submit' value='Login'>
+</form>
