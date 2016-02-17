@@ -18,14 +18,14 @@ default: &default
   adapter: postgresql
   encoding: unicode
   username: ubuntu
-  password: n0unm3ltd0wn
+
   pool: 5
 
 development:
   adapter: postgresql
   encoding: unicode
   username: ubuntu
-  password: n0unm3ltd0wn
+
   pool: 5
 
 
@@ -63,7 +63,7 @@ test:
   adapter: postgresql
   encoding: unicode
   username: ubuntu
-  password: n0unm3ltd0wn
+
   pool: 5
 
 
@@ -90,6 +90,6 @@ production:
   adapter: postgresql
   encoding: unicode
   username: ubuntu
-  password: n0unm3ltd0wn
+
   pool: 5
 
